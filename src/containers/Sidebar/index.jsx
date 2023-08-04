@@ -4,8 +4,9 @@ import Title from '../../components/Title'
 
 import { ButtonTheme, Desc, SidebarContainer } from './styles'
 
-type Props = changeTheme: () => void
-
+type Props = {
+  changeTheme: () => void
+}
 
 const Sidebar = ({ changeTheme }: Props) => (
   <aside>
