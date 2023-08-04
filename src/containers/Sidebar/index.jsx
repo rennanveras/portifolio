@@ -4,18 +4,21 @@ import Title from '../../components/Title'
 
 import { ButtonTheme, Desc, SidebarContainer } from './styles'
 
-const Sidebar = () => (
+type Props = changeTheme: () => void
+
+
+const Sidebar = ({ changeTheme }: Props) => (
   <aside>
     <SidebarContainer>
       <Avatar></Avatar>
       <Title fontSize={18}>Rennan Veras</Title>
-      <Paragraph type={'segundary'} fontSize={16}>
+      <Paragraph type={'primary'} fontSize={16}>
         rennanveras
       </Paragraph>
-      <Desc type={'primary'} fontSize={12}>
+      <Desc type={'segundary'} fontSize={12}>
         Dev Front End
       </Desc>
-      <ButtonTheme>Trocar Tema</ButtonTheme>
+      <ButtonTheme onClick={changeTheme}>Trocar Tema</ButtonTheme>
     </SidebarContainer>
   </aside>
 )

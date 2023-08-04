@@ -7,16 +7,17 @@ export const Desc = styled(P)`
 `
 
 export const ButtonTheme = styled.button`
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.colorPrimary};
   font-weight: bold;
-  color: #eeeeee;
+  color: ${(props) => props.theme.background};
   border-radius: 22px;
   padding: 8px;
   font-size: 10px;
 
   &:hover {
     cursor: pointer;
-    background-color: #101010;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
   }
 `
 

@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.22.9",
     "@types/styled-components": "^5.1.26",
     "eslint-config-prettier": "^8.9.0",
     "eslint-plugin-prettier": "^5.0.0",
